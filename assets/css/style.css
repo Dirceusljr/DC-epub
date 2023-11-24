@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cabecalho .icones {
+    position: absolute;
+    right: 30px;
+}
+
+.container {
+    width: 80%;
+}
+
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-lista {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.lista li {
+    list-style: none;
+}
+
+.lista li .card-body {
+    height: auto;
+}
