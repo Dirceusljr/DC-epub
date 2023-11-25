@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/2b9cc97996.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+    <title>E-Pub - Seu PUB Virtual</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <section class="titulo">
+          <h1>E-Pub</h1>
+          <p>Seu PUB Virtual</p>
+        </section>
+        <section class="icones">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-regular fa-pen-to-square"></i>
+        </section>
+    </header>
+    <main class="cartao-main">
+        <section class="dados" id="dados">
+            <h2>Pagamento</h2>
+            <form >
+                <div class="campo-container">
+                    <label for="num-cartao">Cartão</label>
+                        <input type="text" name="num-cartao" id="num-cartao">
+                    
+                </div>
+                <div class="campo-container">
+                    <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    
+                </div>
+                <div class="campo-container">
+                    <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf">
+                    
+                </div>
+                <div class="campo-container">
+                    <p>Vencimento</p>
+                    <div class="campo-vencimento">
+                        <div class="campo-container">
+                            <label for="venc-mes">Mês</label>
+                                <input type="text" name="venc-mes" id="venc-mes">
+                                               
+                        </div>
+                        <div class="campo-container">
+                            <label for="venc-ano">Ano</label>
+                                <input type="text" name="venc-ano" id="venc-ano">
+                                                
+                        </div>
+                    </div>
+                </div>
+                <div class="campo-container">
+                    <label for="codigo">CVV</label>
+                        <input type="text" name="codigo" id="codigo">
+                    
+                </div>
+    
+            </form>
+            
+        </section>
+        <section class="cartao" id="cartao">
+            <div class="cartao-container">
+                <i class="fa-solid fa-microchip chip" style="color: #cfa717;"></i>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

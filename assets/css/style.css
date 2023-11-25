@@ -101,3 +101,37 @@ ul {
     background-color: var(--cor-pri);
     border: none;
 }
+
+.cartao-main {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cartao-container {
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    border-radius: 16px;
+    position: relative;
+}
+
+.chip {
+    position: absolute;
+    left: 20px;
+    top: 125px;
+    font-size: 50px;
+}
+
+.campo-container {
+    display: flex;
+    flex-direction: column;
+
+}
+.campo-container p {
+    text-align: center;
+}
+
+.campo-vencimento {
+    display: flex;
+}

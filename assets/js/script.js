@@ -49,7 +49,7 @@ const cervejas = [
         "nome": "Régua de degustação",
         "imagem": "./assets/imagens/Cervejas/Regua.jpg",
         "descricao": "Régua com as 4 cervejas da casa para degustação.",
-        "preco": 5.5,
+        "preco": "20,00",
         "favorito": false
     }
 ]
