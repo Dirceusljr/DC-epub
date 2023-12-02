@@ -42,40 +42,36 @@
             <form >
                 <div class="campo-container">
                     <label for="num-cartao">Cartão</label>
-                        <input type="text" name="num-cartao" id="num-cartao">
-                    
+                        <input type="text" name="num-cartao" id="num-cartao">                    
                 </div>
                 <div class="campo-container">
                     <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome">
-                    
+                        <input type="text" name="nome" id="nome">                    
                 </div>
                 <div class="campo-container">
                     <label for="cpf">CPF</label>
-                        <input type="text" name="cpf" id="cpf">
-                    
+                        <input type="text" name="cpf" id="cpf">                    
                 </div>
                 <div class="campo-container">
                     <p>Vencimento</p>
                     <div class="campo-vencimento">
                         <div class="campo-container">
                             <label for="venc-mes">Mês</label>
-                                <input type="text" name="venc-mes" id="venc-mes">
-                                               
+                                <select name="venc-mes" id="venc-mes">
+                                    <option value="mes" selected disabled>Selecione</option>
+                                </select>
                         </div>
                         <div class="campo-container">
                             <label for="venc-ano">Ano</label>
-                                <input type="text" name="venc-ano" id="venc-ano">
-                                                
+                                <select name="venc-ano" id="venc-ano">
+                                    <option value="ano" selected disabled>Selecione</option>
+                                </select>
                         </div>
                     </div>
-                </div>
                 <div class="campo-container">
                     <label for="codigo">CVV</label>
-                        <input type="text" name="codigo" id="codigo">
-                    
-                </div>
-    
+                        <input type="text" name="codigo" id="codigo">                    
+                </div>    
             </form>
             
         </section>
@@ -83,6 +79,9 @@
             <div class="cartao-container">
                 <i class="fa-solid fa-microchip chip" style="color: #cfa717;"></i>
             </div>
+            <div class="num_cartao" id="num_cartao"></div>
+            <div class="nome_cartao" id="nome_cartao"></div>
+            <div class="validade_cartao" id="validade_cartao">MM/YY</div>
         </section>
     </main>
 

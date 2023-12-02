@@ -1,6 +1,10 @@
 const listaCervejas = document.getElementById('cerveja');
 const listaDrinks = document.getElementById('drinks');
 const listaComida = document.getElementById('comida');
+const mesLista = document.getElementById('venc-mes');
+const anoLista = document.getElementById('venc-ano');
+
+
 
 const cervejas = [
     {
@@ -128,8 +132,6 @@ const comida = [
     }
 ]
 
-
-
 function criarLista(item, listaDeItens) {
     for (let i = 0; i < item.length; i++) {
         let lista = document.createElement('li')
@@ -156,3 +158,58 @@ window.addEventListener('load', (e) => {
     criarLista(drinks, listaDrinks)
     criarLista(comida, listaComida)
 })
+
+function converterMes(mes) {
+    const date = new Date()
+    date.setMonth(mes)
+
+    return date.toLocaleDateString('pt-br', {month: 'long'})
+}
+
+for (let m = 0; m < 12; m++) {
+    mesLista.innerHTML += `
+    <option value="${m+1}">${converterMes(m)}</option>
+    `
+}
+
+let hoje = new Date()
+
+for(let a= hoje.getFullYear(); a < hoje.getFullYear()+15 ; a++) {
+    anoLista.innerHTML += 
+    `
+    <option value="${a}">${a}</option>
+    `
+}
+
+const numeroDigitado = document.getElementById('num-cartao');
+const nomeDigitado = document.getElementById('nome');
+const numeroCartao = document.getElementById('num_cartao');
+const nomeCartao = document.getElementById('nome_cartao');
+
+nomeDigitado.addEventListener('keyup', () => {
+    nomeCartao.innerHTML = nomeDigitado.value
+})
+
+numeroDigitado.addEventListener('keyup', () => {
+    let primeiroNumero = numeroDigitado.value.substr(0,1)
+    numeroCartao.innerHTML = numeroDigitado.value
+
+    if(primeiroNumero == '4') {
+        //card_bandeira.innerHtml = imagem Visa
+    } else if (primeiroNumero == '5') {
+        //card_bandeira.innerHtml = imagem Master
+    }
+})
+
+const mesSelecionado = document.getElementById('venc-mes')
+const anoSelecionado = document.getElementById('venc-ano')//.
+const validadeCartao = document.getElementById('validade_cartao')
+
+mesSelecionado.addEventListener('change', insereValidade)
+
+
+anoSelecionado.addEventListener('change', insereValidade)
+
+function insereValidade () {
+    validadeCartao.innerText = mesSelecionado.value + '/' + anoSelecionado.value.substr(2,4)
+}

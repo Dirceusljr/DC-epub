@@ -114,6 +114,7 @@ ul {
     background-color: black;
     border-radius: 16px;
     position: relative;
+    margin-top: 35px;
 }
 
 .chip {
@@ -130,8 +131,10 @@ ul {
 }
 .campo-container p {
     text-align: center;
+    margin-bottom: 0;
 }
 
 .campo-vencimento {
     display: flex;
+    justify-content: space-between;
 }
